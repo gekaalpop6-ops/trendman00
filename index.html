@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> TREND MAN</title>
+    <!-- استيراد خطوط وجوجل وأيقونات FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* حيز الصورة الشخصية والاسم */
+        .profile {
+            margin-top: 40px;
+            margin-bottom: 30px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 3px solid #ff4757;
+            object-fit: cover;
+        }
+
+        .profile h1 {
+            font-size: 24px;
+            margin-top: 15px;
+            color: #fff;
+        }
+
+        .profile p {
+            color: #a4b0be;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        /* أزرار السوشيال ميديا */
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 5px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px;
+            text-decoration: none;
+            color: white;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s, background 0.3s;
+            font-size: 16px;
+        }
+
+        .btn-link:hover {
+            transform: scale(1.03);
+        }
+
+        .instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+        .tiktok { background-color: #000000; border: 1px solid #fff; }
+        .facebook { background-color: #1877f2; }
+        .whatsapp { background-color: #25d366; }
+
+        /* قسم معرض صور الموديلات */
+        .section-title {
+            margin: 50px 0 20px;
+            font-size: 22px;
+            border-bottom: 2px solid #ff4757;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+            margin-bottom: 40px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 15px;
+            height: 300px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        /* قسم الموقع الجغرافي */
+        .location-map {
+            margin-bottom: 50px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+        }
+
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #57606f;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- البروفايل الرئيسي -->
+        <div class="profile">
+            <!-- استبدل رابط الصورة برابط صورتك أو شعارك -->
+            <img src="trend man.png" alt="الشعار أو الصورة الشخصية">
+            <h1>تريند مان -TREND MAN</h1>
+            <p>مرحباً بكم في موقعنا الرسمي، تصفحوا حساباتنا وأحدث أعمالنا بالأسفل</p>
+        </div>
+
+        <!-- أزرار وسائل التواصل الاجتماعي -->
+        <div class="social-links">
+            <!-- استبدل الـ # بروابط حساباتك الحقيقية -->
+            <a href="#" target="_blank" class="btn-link instagram"><i class="fab fa-instagram"></i> انستغرام - Instagram</a>
+            <a href="https://www.tiktok.com/@k.rfactory.x08?is_from_webapp=1&sender_device=pc" target="_blank" class="btn-link tiktok"><i class="fab fa-tiktok"></i> تيك توك - TikTok</a>
+            <a href="#" target="_blank" class="btn-link facebook"><i class="fab fa-facebook-f"></i> فيسبوك - Facebook</a>
+            <a href="" target="_blank" class="btn-link whatsapp"><i class="fab fa-whatsapp"></i> تواصل عبر الواتساب</a>
+        </div>
+
+        <!-- معرض صور الموديلات -->
+        <h2 class="section-title">ألبوم صور الموديلات</h2>
+        <div class="gallery">
+            <!-- ضع روابط صور الموديلات الخاصة بك مكان الروابط التجريبية بالأسفل -->
+            <div class="gallery-item"><img src="ChatGPT Image 17 يوليو 2026، 09_56_00 م.png"موديل 1"></div>
+            <div class="gallery-item"><img src="2.png" alt="موديل 2"></div>
+            <div class="gallery-item"><img src="3.jpeg" alt="موديل 3"></div>
+            <div class="gallery-item"><img src="4.jpeg" alt="موديل 4"></div>
+       <div class="gallery-item"><img src="5.jpeg" alt="موديل 4"></div>
+<div class="gallery-item"><img src="6.jpeg" alt="موديل 4"></div>
+<div class="gallery-item"><img src="7.jpeg" alt="موديل 4"></div>
+<div class="gallery-item"><img src="8.jpeg" alt="موديل 4"></div>
+<div class="gallery-item"><img src="9.jpeg" alt="موديل 4"></div>
+<div class="gallery-item"><img src="10.jpeg" alt="موديل 4"></div>
+        </div>
+
+        <!-- خريطة الموقع الجغرافي -->
+        <h2 class="section-title">موقعنا الجغرافي</h2>
+        <div class="location-map">
+            <!-- للحصول على خريطتك: اذهب لخرائط جوجل > مشاركة > تضمين خريطة > انسخ رابط src وضعه هنا -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3451.171228224525!2d31.2357116!3d30.0444196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDAyJzM5LjkiTiAzMcKwMTQnMDguNiJF!5e0!3m2!1sar!2seg!4v1625000000000!5m2!1sar!2seg" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <footer>جميع الحقوق محفوظة © 2026</footer>
+    </div>
+
+</body>
+</html>
